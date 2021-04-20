@@ -1,0 +1,25 @@
+%responsive-image {
+    display: flex;
+    width: 100%;
+    flex: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  // H:1, W:1
+  .image-1x1{
+    @extend %responsive-image;
+    padding-bottom: percentage(1 / 1);
+  }
+  // H:3, W:4
+  .image-3x4{
+    @extend %responsive-image;
+    padding-bottom: percentage(3 / 4);
+  }
+  
+  // H:2, W:1
+  .image-2x1{
+    @extend %responsive-image;
+    padding-bottom: percentage(2 / 1);
+  }

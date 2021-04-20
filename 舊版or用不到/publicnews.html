@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="homepage.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <title>publicNews</title>
+
+  <style>
+    nav * {
+      line-height: 45.5px;
+    }
+
+
+    table {
+      border: 2px #2f2c40 solid;
+
+
+      border: 2px #23212F solid;
+
+      border-radius: 5px;
+      border-collapse: separate;
+      text-align: center;
+      width: 100%;
+    }
+
+    .leftT {
+      text-align: left;
+    }
+
+    .spanF {
+      font-size: 2vh;
+    }
+
+    body {
+      background-color: #eee7dd;
+    }
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <!--要固定在最上面-->
+    <div class="fixed-top header" style="background-color: #2f2c40;">
+      <nav class="nav">
+        <div class="container-fluid ">
+          <div class="row ">
+            <div class="col-9 ">
+              <nav class="nav">
+                <a class="nav-link active" aria-current="page" href="#" style="padding:0">
+                  <img src="img/nutc-logo.png" height="60.8px"></a>
+                <a class="nav-link" href="#">社團總覽</a>
+                <a class="nav-link" href="#">我的社團</a>
+                <a class="nav-link" href="#">活動月曆</a>
+                <a class="nav-link" href="#">最新消息</a>
+                <a class="nav-link" href="#">創建社團</a>
+              </nav>
+              </ul>
+            </div>
+            <div class="col-3">
+              <!-- 學生照片 -->
+              <ul class="nav justify-content-end">
+                <li>
+                  <img class="img-thumbnail"
+                    style="padding: 0.1rem; background-color:#F8F8F6; border-radius:10rem; max-width:45.5px;"
+                    src="img/head.jpg">
+                </li>
+                <li class="nav-item dropdown dropleft">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">Dropdown</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a>
+                      <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul> -->
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              </ul>
+
+            </div>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+  <div style="margin:10vh;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-7">
+          <h3><b>最新消息</b></h3>
+        </div>
+
+        <div class="col-5 ">
+          <div class="dropdown float-right">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#2f2c40 ; ">
+              消息類型
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="margin: 3rem">
+      <table class="table table-hover" style="margin-top: 3vh; border: '0';">
+        <thead>
+          <tr>
+            <th scope="col" width="40%">標題</th>
+            <th scope="col" width="8%">分類</th>
+            <th scope="col">發布日期</th>
+            <th scope="col">詳情</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="leftT">rerrere1</th>
+            <td><span class="badge badge-secondary spanF" style="background-color: tomato; ">活動</span></td>
+            <td>Otto</td>
+            <td>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-info bg-d light" data-toggle="modal"
+                data-target="#exampleModalCenter" style="border-radius: 25px;">
+                MORE
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color: #F8F8F6;">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content" style="background-color:#2f2c40 ;">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        style="color: #F8F8F6;">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        style="background-color:  #F8F8F6; color: #2f2c40;">Close</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+
+  <footer class=" footer fixed-bottom">
+    <div class="container text-center">
+      <span class="text-muted"></span>三民校區：台中市北區三民路三段129號 | 民生校區：台中市西區三民路一段193號
+      電話：(04)22195678 | 傳真：(04)22195011 | <a href="https://www.nutc.edu.tw/files/11-1000-1506.php">資訊安全及隱私權政策</a></span>
+    </div>
+  </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

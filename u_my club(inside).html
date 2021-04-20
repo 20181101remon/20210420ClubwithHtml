@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <!-- <link rel="stylesheet" href="css/homepage.css"> -->
+    <link rel="stylesheet" href="css/club.css">
+    <link rel="stylesheet" href="css/image1x1.css">
+
+    <title>XXclubs</title>
+
+    <style>
+        nav * {
+            line-height: 45.5px;
+        }
+    </style>
+</head>
+
+<body class="bg dark">
+    <div class="wrap">
+        <header>
+            <!--要固定在最上面-->
+            <div class="fixed-top header" style="background-color: #2f2c40;">
+              <nav class="nav p-2">
+                <div class="container-fluid ">
+                  <div class="row ">
+                    <div class="col-9 px-0">
+                      <nav class="nav">
+                        <a class="nav-link active" aria-current="page" href="homepage.html" style="padding:0">
+                          <img src="../img/nutc-logo.png" height="60.8px"></a>
+                        <a class="nav-link" href="allclub.html">社團總覽</a>
+                        <a class="nav-link" href="my club.html">我的社團</a>
+                        <a class="nav-link" href="#">活動月曆</a>
+                        <a class="nav-link" href="publicnews.html">最新消息</a>
+                        <a class="nav-link" href="apply_club.html">創建社團</a>
+                      </nav>
+                      
+                    </div>
+                    <div class="col-3 px-0">
+                      <!-- 學生照片 -->
+                      <ul class="nav justify-content-end">
+                        <li>
+                          <img class="img-thumbnail" style="padding: 0.1rem; background-color:#F8F8F6; border-radius:10rem; max-width:45.5px;" src="../img/head.jpg">
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dark text-center" href="#">後台</a></li>
+                            <li><a class="dropdown-item dark text-center" href="#">登出</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      
+                    </div>
+                    
+        
+                    
+                  </div>
+                </div>
+              </nav>
+        
+            </div>
+          </header>
+          
+        <div class="box"></div>
+        <div class="container-fluid m-0 p-0">
+            <div class="row m-0">
+                <div class="item">
+                    <div class="col-4">
+                        <div class="txt">
+                            <h5><strong>社團簡介</strong></h5>
+                            <div class="txt-1">
+                                <p>宗旨：</p>
+                                <p>目的：</p>
+                            </div>
+                            <hr>
+                            </hr>
+                            <h5><strong>社團資訊</strong></h5>
+                            <div class="txt-1">
+                                <p>社課時間：</p>
+                                <p>社課地點：</p>
+                                <p>社課費用：</p>
+                                <p>指導老師：</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="pic">
+                            <img src="img/club.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="nav nav-tabs bg-d " id="nav-tab" role="tablist">
+            <a class="nav-link" href="homepage.html">Home</a>
+            <a class="nav-item nav-link" id="nav-news-tab" data-toggle="tab" href="#nav-news" role="tab"
+                aria-controls="nav-news" aria-selected="true">最新消息</a>
+            <a class="nav-item nav-link" id="nav-calendar-tab" data-toggle="tab" href="#nav-calendar" role="tab"
+                aria-controls="nav-calendar" aria-selected="false">活動月曆</a>
+            <a class="nav-item nav-link" id="nav-class-tab" data-toggle="tab" href="#nav-class" role="tab"
+                aria-controls="nav-class" aria-selected="false">社課紀錄</a>
+            <a class="nav-item nav-link" id="nav-feedback-tab" data-toggle="tab" href="#nav-feedback" role="tab"
+                aria-controls="nav-feedback" aria-selected="true">即時反饋</a>
+            <a class="nav-item nav-link" id="nav-result-tab" data-toggle="tab" href="#nav-result" role="tab"
+                aria-controls="nav-result" aria-selected="false">活動成果</a>
+            <a class="nav-item nav-link" id="nav-plan-tab" data-toggle="tab" href="#nav-plan" role="tab"
+                aria-controls="nav-plan" aria-selected="false">年度計畫</a>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent" style="margin: 3rem;">
+        <div class="tab-pane fade show" id="nav-news" role="tabpanel" aria-labelledby="nav-news-tab">
+            <h5><strong>最新消息</strong></h5>
+            <table class="table table-hover" style="margin-top: 3vh; border: '0';">
+                <thead>
+                    <tr>
+                        <th scope="col" width="40%">標題</th>
+                        <th scope="col">發布日期</th>
+                        <th scope="col">詳情</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="leftT">rerrere1</th>
+                        <td class="text-center">Otto</td>
+                        <td class="text-center">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-info bg-d light" data-toggle="modal"
+                                data-target="#exampleModalCenter" style="border-radius: 25px;">
+                                MORE
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color: #F8F8F6;">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content" style="background-color:#2f2c40 ;">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                style="color: #2f2c40;">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                                style="background-color:  #F8F8F6; color: #2f2c40;">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="nav-calendar" role="tabpanel" aria-labelledby="nav-calendar-tab">
+            <h5><strong>活動月曆</strong></h5>
+            <div class="text-center">
+                <iframe src="https://calendar.google.com/calendar/embed?src=2023youth%40gmail.com&ctz=Asia%2FTaipei"
+                    style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-class" role="tabpanel" aria-labelledby="nav-class-tab">
+            <h5><strong>社課紀錄</strong></h5>
+            <div class="card mb-3 bg m-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <div class="news-article-img" style="background-image: url(../img/club-1.jpg);"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">挖系社課紀錄</h5>
+                            <p class="card-text">ㄗㄟ喜日期</p>
+                            <p class="card-text">短短ㄉ社課介紹(???????This is a wider card with supporting text below as a
+                                natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg m-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <div class="news-article-img" style="background-image: url(/img/club-1.jpg);"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">挖系社課紀錄</h5>
+                            <p class="card-text">ㄗㄟ喜日期</p>
+                            <p class="card-text">短短ㄉ社課介紹(???????This is a wider card with supporting text below as a
+                                natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg m-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <div class="news-article-img" style="background-image: url(/img/club-1.jpg);"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">挖系社課紀錄</h5>
+                            <p class="card-text">ㄗㄟ喜日期</p>
+                            <p class="card-text">短短ㄉ社課介紹(???????This is a wider card with supporting text below as a
+                                natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container d-flex" style="margin-top: 2.5rem;">
+                <div class="align-items-center " style="width: 25%;">
+                    <div class="news-article-img-box">
+                        <div class="news-article-img" style="background-image: url(/img/club-1.jpg);">
+                        </div>
+                    </div>
+                </div>
+                <div class="align-items-center p-3" style="width: 75%;">
+                    <h5>aesfdghjkl</h5>
+                    <p>2021/07/17</p>
+                    <p>物以類聚，人以群分，你接近什麼樣的人，就會走什麼樣的路。小人會教你如何吃喝嫖賭，小偷會教你如何坑蒙拐騙，賭友會教你賭場風月，酒友會教你醉生夢死。人生最大的運氣，不是撿到錢，也不是中大獎，而是有人願意，指引你走向更高的平臺，創造更高的人生價值，其實，限制你發展的不是你的學歷，也不是你的智商，而是你身處的生活圈和身邊的人。所謂的貴人，並不是直接把錢給你的人，而是開拓你的眼界，糾正你的格局，給你正能量助力的人。一個人能走多遠，看他與誰同行，一個人有多優秀，看他有誰指點，一個人取得多大的成就，看他跟誰在一起。選對朋友受益一生，選對伴侶幸福一生，選對老師智慧一生，選對行業成就一生，幸福人生從正念開始。
+                    </p>
+                </div>
+            </div> -->
+        </div>
+        <div class="tab-pane fade show" id="nav-feedback" role="tabpanel" aria-labelledby="nav-feedback-tab">
+            <h5><strong>即時反饋</strong></h5>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">活動類型：</label>
+                <form role="form">
+                    <div class="form-group">
+                        <div class="container">
+                            <div class="row d-flex">
+                                <div class="col-3">
+                                    <label class="radio-inline">
+                                        <input type="radio" value="class" name="type">社課
+                                    </label>
+                                </div>
+                                <div class="col-3">
+                                    <label class="radio-inline">
+                                        <input type="radio" value="act" name="type">活動
+                                    </label>
+                                </div>
+                                <div class="col-3">
+                                    <label class="radio-inline">
+                                        <input type="radio" value="ach" name="type">成果展
+                                    </label>
+                                </div>
+                                <div class="col-3">
+                                    <label class="radio-inline">
+                                        <input type="radio" value="other" name="type">其他
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">建議：</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-secondary bg-d c0">提交</button>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-result" role="tabpanel" aria-labelledby="nav-result-tab">
+            <h5><strong>活動成果</strong></h5>
+            <div class="card mb-3 bg m-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <div class="news-article-img" style="background-image: url(/img/club-2.jpg);"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">挖系活動成果</h5>
+                            <p class="card-text">ㄗㄟ喜日期</p>
+                            <p class="card-text">短短ㄉ介紹(???????This is a wider card with supporting text below as a
+                                natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg m-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <div class="news-article-img" style="background-image: url(/img/club-2.jpg);"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">挖系活動成果</h5>
+                            <p class="card-text">ㄗㄟ喜日期</p>
+                            <p class="card-text">短短ㄉ介紹(???????This is a wider card with supporting text below as a
+                                natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="nav-plan" role="tabpanel" aria-labelledby="nav-plan-tab">
+            <h5><strong>年度計畫</strong></h5>
+            <div class="container m-3">
+                <div class="row text-center">
+                    <div class="col-6 col-lg-3">
+                        <div class="card m-2 card-border">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card m-2 card-border">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card m-2 card-border">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card m-2 card-border">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card m-2 card-border">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer>
+            <div class="container text-center">
+                <span class="text-muted"></span>三民校區：台中市北區三民路三段129號 | 民生校區：台中市西區三民路一段193號
+                電話：(04)22195678 | 傳真：(04)22195011 | <a style="text-decoration:none;"
+                    href="https://www.nutc.edu.tw/files/11-1000-1506.php">資訊安全及隱私權政策</a></span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

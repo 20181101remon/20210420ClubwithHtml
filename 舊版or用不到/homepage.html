@@ -1,0 +1,169 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/col.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/homepage.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <title>Homepage</title>
+
+  <style>
+    nav * {
+      line-height: 45.5px;
+    }
+  </style>
+</head>
+
+
+<body>
+  <header >
+      <!--要固定在最上面-->
+      <header>
+        <!--要固定在最上面-->
+        <div class="fixed-top header">
+            <nav class="nav">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-9" style="padding-left: 0rem;">
+                            <nav class="nav">
+                                <a class="nav-link active" aria-current="page" href="#" style="padding:0">
+                                    <img src="img/nutc-logo.png" height="60.8px"></a>
+                                <a class="nav-link" href="#">社團總覽</a>
+                                <a class="nav-link" href="#">我的社團</a>
+                                <a class="nav-link" href="#">活動月曆</a>
+                                <a class="nav-link" href="#">最新消息</a>
+                                <a class="nav-link" href="#">創建社團</a>
+                            </nav>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <!-- 學生照片 -->
+                            <ul class="nav justify-content-end">
+                                <li>
+                                    <img class="img-thumbnail"
+                                        style="padding: 0.1rem; background-color:#F8F8F6; border-radius:10rem; max-width:45.5px; margin-top: .48rem;margin-bottom: .48rem;"
+                                        src="img/head.jpg">
+                                </li>
+                                <li class="nav-item dropdown dropleft">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+<div class="cover"> 
+  <h1 class="word" ><div style="border: 2px #F8F8F6 solid; padding: 1vw; background-color:rgba(255, 255, 255, 0.199); "> Live the life you have imagined</div></h1> </div>
+</div>
+ 
+
+
+    <section>
+      <div id="container" style="margin-top: 6vh; ">
+        <div id="left-col">
+          <div class="tab-content " id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"><img src="../img/homecover.jpg" class="d-block w-100" alt="..."></div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><img src="../img/signin.jpg" class="d-block w-100" alt="..."></div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><img src="../img/signin.jpg" class="d-block w-100" alt="..."></div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"><img src="../img/homecover.jpg" class="img-fluid" alt="..."></div>
+          </div>
+        </div>
+        
+        <div id="right-col" class="lign-self-center">
+          <div  class="lign-self-center " style="margin: 5px; " >
+        <div class="list-group " id="list-tab" role="tablist" >
+          <h4 style="color: #F8F8F6; margin: 1vh;">🎇精彩活動與社課</h4>
+            <a class="list-group-item list-group-item-action active btn light" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" style="background-color: #2f2c40; color: #F8F8F6">Home</a>
+            <a class="list-group-item list-group-item-action d-flex btn light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" style="background-color: #2f2c40; color: #F8F8F6">Profile</a>
+            <a class="list-group-item list-group-item-action d-flex btn light" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" style="background-color: #2f2c40; color: #F8F8F6">Messages</a>
+            <a class="list-group-item list-group-item-action d-flex btn light" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" style="background-color: #2f2c40; color: #F8F8F6">Settings</a>
+            <a class="list-group-item list-group-item-action d-flex btn light" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" style="background-color: #2f2c40; color: #F8F8F6">Settings</a>
+            <a class="list-group-item list-group-item-action d-flex btn light" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" style="background-color: #2f2c40; color: #F8F8F6">Settings</a>
+            <a class="list-group-item list-group-item-action d-flex btn light" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" style="background-color: #2f2c40; color: #F8F8F6">Settings</a>
+            <a class="list-group-item list-group-item-action d-flex btn light" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" style="background-color: #2f2c40; color: #F8F8F6">Settings</a>
+            <a class="list-group-item list-group-item-action d-flex " id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"style="background-color: #2f2c40; color: #F8F8F6">Settings</a>
+        
+  
+      </div>
+      </div>
+    </section>
+
+  <br>
+  <div class="container-fluid" style="background-color: #DFCFB8;">
+  <div class="row " style="padding:3vh 9vw 1px" >
+   <div class="card-deck"  >
+      <div class="card"  >
+        <div class="card-body" >
+          <h4 class="card-title dark"><b>最新消息</b></h4>
+          <img src="../img/news.jpg" class="card-img " alt="..." style="max-height: 70vh;">.
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <div style="text-align: center;">
+            <a href="#" class="btn btn-dark" style="background:#2f2c40 ;">&nbsp;&nbsp;VIEW&nbsp;MORE&nbsp;&nbsp;</a>
+          </div>
+        </div>
+      </div>
+    
+   
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title "><B>最新活動</B></h4>
+          <img src="../img/activity.jpg" class="card-img" alt="..." style="max-height: 70vh;">.
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <div style="text-align: center;">
+            <a href="#" class="btn btn-dark" style="background:#2f2c40 ;">&nbsp;&nbsp;VIEW&nbsp;MORE&nbsp;&nbsp;</a>
+          </div>
+        </div>
+      </div>
+    
+ 
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title"><B>最新成果展消息</B></h4>
+            <img src="../img/show.jpg" class="card-img" alt="..." style="max-height: 70vh;">.
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            
+            <div style="text-align: center;">
+                <a href="#" class="btn btn-dark" style="background:#2f2c40;">&nbsp;&nbsp;VIEW&nbsp;MORE&nbsp;&nbsp;</a>
+              </div>
+          </div>
+        </div>
+   </div>
+  </div>
+</div>
+<div>
+    
+  <footer class=" footer " >
+    <div class="container text-center">
+      <span class="text-muted"></span>三民校區：台中市北區三民路三段129號 | 民生校區：台中市西區三民路一段193號
+      電話：(04)22195678 | 傳真：(04)22195011 | <a href="https://www.nutc.edu.tw/files/11-1000-1506.php">資訊安全及隱私權政策</a></span>
+    </div>
+  </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
